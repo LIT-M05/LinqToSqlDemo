@@ -1,0 +1,17 @@
+﻿@model PeopleLinqToSql.Data.Person
+
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 well">
+        <form method="post" action="/home/update">
+            <input type="text" name="firstName" value="@Model.FirstName" placeholder="First Name" class="form-control" />
+            <br />
+            <input type="text" name="lastName" value="@Model.LastName" placeholder="Last Name" class="form-control" />
+            <br />
+            <input type="text" name="age" value="@Model.Age" placeholder="Age" class="form-control" />
+            <input type="hidden" name="id" value="@Model.Id"/>
+            <br />
+            <button class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>
